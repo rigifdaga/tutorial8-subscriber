@@ -10,3 +10,15 @@
 3. Simulation slow subscriber
    Screenshot antarmuka RabbitMQ yang di mana Queue-nya mencapai 20. Hal ini disebabkan karena saya menjalankan `cargo run` sebanyak 6 kali sehingga terjadi queue sebanyak 5 cargo run. Jadi, 1 cargo run itu mengirimkan sebanyak 4 data sehingga terdapat queue sebanyak 20 data.
    
+   [![e08ce3d8-6527-4ffc-bd1c-bbf9cc91f8c5.jpg](https://i.postimg.cc/Z5GyhT92/e08ce3d8-6527-4ffc-bd1c-bbf9cc91f8c5.jpg)](https://postimg.cc/87bCRgmm)
+
+   4. Running at least three subscribers
+   Screenshot menjalankan `cargo run` sebanyak 3 kali di console yang perbeda pada subscriber.
+  
+   [![b7873ba0-724f-48d6-b01d-0a899b1e9081.jpg](https://i.postimg.cc/gJYmZjFB/b7873ba0-724f-48d6-b01d-0a899b1e9081.jpg)](https://postimg.cc/Lq0cdHsz)
+
+   Screenshot menjalankan `cargo run` sebanyak 4 kali pada publisher.
+   [![21fe9747-ed95-4dc5-9804-d0b3c254337a.jpg](https://i.postimg.cc/V69QTXHV/21fe9747-ed95-4dc5-9804-d0b3c254337a.jpg)](https://postimg.cc/PpqRvvHW)
+
+* Screenshot hasil spike dari message queue berkurang yang menunjukkan peningkatan kecepatan dari sebelumnya karena request yang diterima queue dapat dibagi kepada 3 subscriber.
+  [![3c1a7127-2157-43b7-af3d-cbc3fec421bf.jpg](https://i.postimg.cc/wTX2m0RP/3c1a7127-2157-43b7-af3d-cbc3fec421bf.jpg)](https://postimg.cc/ppdKNQZY)
